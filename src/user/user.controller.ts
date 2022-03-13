@@ -6,12 +6,13 @@ import {
   Param,
   Delete,
   UseGuards,
-  Request, Query
-} from "@nestjs/common";
+  Request,
+  Query,
+} from '@nestjs/common';
 import { UserService } from './user.service';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
-import { SearchUserDto } from "./dto/searchg-user.dto";
+import { SearchUserDto } from './dto/searchg-user.dto';
 
 @Controller('users')
 export class UserController {
